@@ -1,0 +1,254 @@
+.promo-section {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  padding: 0 45px 65px;
+
+  background-color: #f7faef;
+}
+
+
+/* =========================
+   COMMON PROMO CARD
+========================= */
+
+.promo-card {
+  width: 100%;
+  height: 210px;
+  min-height: 210px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background-color: #dcebd5;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.promo-image {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.promo-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+/* .promo-card:hover .promo-image img {
+  transform: scale(1.03);
+} */
+
+
+/* =========================
+   ORGANIC VEGETABLES CARD
+========================= */
+
+.vegetables-card {
+  position: relative;
+}
+
+.vegetables-image {
+  width: 43%;
+
+  order: 1;
+}
+
+.vegetables-card .promo-content {
+  width: 57%;
+
+  order: 2;
+
+  padding: 25px 20px;
+}
+
+
+/* =========================
+   NATURAL & HEALTHY CARD
+========================= */
+
+.healthy-card {
+  position: relative;
+
+  padding-left: 30px;
+}
+
+.healthy-card .promo-content {
+  width: 55%;
+
+  padding: 25px 0;
+}
+
+.healthy-image {
+  width: 45%;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.promo-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 28px;
+
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  color: #1f3d28;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.promo-content p {
+  margin: 12px 0 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  color: #506152;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.promo-content button {
+  margin-top: 18px;
+
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 3px;
+
+  background-color: #477a4d;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.promo-content button:hover {
+  background-color: #315f38;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .promo-section {
+    padding: 0 35px 55px;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .promo-card {
+    height: 210px;
+    min-height: 210px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .promo-section {
+    padding: 0 22px 45px;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .promo-card {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .promo-content h2 {
+    font-size: 25px;
+  }
+
+  .promo-content p {
+    font-size: 11px;
+  }
+
+  .healthy-card {
+    padding-left: 20px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .promo-card {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .promo-content h2 {
+    font-size: 23px;
+  }
+
+  .promo-content button {
+    padding: 9px 16px;
+    font-size: 10px;
+  }
+}
